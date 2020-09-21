@@ -8,12 +8,10 @@ function App() {
   });
 
   const get = async () => {
-    await axios
-      .get("https://query1.finance.yahoo.com/v7/finance/quote?symbols=axp")
-      .then((data) => {
-        data = data.data.quoteResponse.result[0];
-        setText(data.shortName);
-      });
+    await axios.get("/v7/finance/quote?symbols=axp").then((data) => {
+      data = data.data.quoteResponse.result[0];
+      setText(data.shortName);
+    });
   };
 
   return (
