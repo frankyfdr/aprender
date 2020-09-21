@@ -1,5 +1,4 @@
 {
-  "proxy": "https://query1.finance.yahoo.com",
   "name": "aprender",
   "version": "0.1.0",
   "private": true,
